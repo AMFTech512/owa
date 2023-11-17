@@ -6,7 +6,7 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 WORKDIR /var/www/html
 
-ENV OWA_VERSION=1.6.9
+ENV OWA_VERSION=1.7.8
 ADD https://github.com/Open-Web-Analytics/Open-Web-Analytics/releases/download/${OWA_VERSION}/owa_${OWA_VERSION}_packaged.tar /owa.tar
 
 RUN tar -xvf /owa.tar \
